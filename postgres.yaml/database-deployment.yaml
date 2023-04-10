@@ -27,9 +27,15 @@ spec:
         - containerPort: 5432
         env:
         - name: POSTGRES_USER
-          value: "$DB_USERNAME"
+          valueFrom:
+            secretKeyRef:
+              name: certimatch-secrets
+              key: username
         - name: POSTGRES_PASSWORD
-          value: "$DB_PASSWORD"
+          valueFrom:
+            secretKeyRef:
+              name: certimatch-secrets
+              key: password
         - name: POSTGRES_DB
           value: "certimatch"
         volumeMounts:

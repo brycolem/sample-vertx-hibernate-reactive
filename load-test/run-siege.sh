@@ -8,9 +8,9 @@ total_duration=60
 # Generate the URL list
 url_list="url_list.txt"
 touch $url_list
-echo "http://127.0.0.1:8887/api/v1/question" > $url_list
+echo "http://172.21.118.12:8887/api/v1/question" > $url_list
 for i in {1..10}; do
-  echo "http://127.0.0.1:8887/api/v1/question/$i" >> $url_list
+  echo "http://172.21.118.12:8887/api/v1/question/$i" >> $url_list
 done
 
 # Start Siege ramping up users

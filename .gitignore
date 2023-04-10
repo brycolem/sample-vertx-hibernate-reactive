@@ -42,5 +42,5 @@ buildNumber.properties
 *.launch
 .settings/
 
-# macOS related
-.DS_Store
+# Project related
+url_list.txt
