@@ -34,13 +34,14 @@ buildNumber.properties
 .mvn/timing.properties
 .mvn/wrapper/maven-wrapper.jar
 
-# IntelliJ IDEA and Eclipse related
+# IntelliJ IDEA, VSCode and Eclipse related
 *.iml
 *.ipr
 *.iws
 .idea/
 *.launch
 .settings/
+.vscode/
 
 # Project related
 url_list.txt
